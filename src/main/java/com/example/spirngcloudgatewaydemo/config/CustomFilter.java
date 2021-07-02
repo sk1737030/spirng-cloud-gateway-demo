@@ -16,7 +16,6 @@ public class CustomFilter extends AbstractGatewayFilterFactory<CustomFilter.Conf
         super(Config.class);
     }
 
-
     @Override
     public GatewayFilter apply(Config config) {
         return ((exchange, chain) -> {
@@ -31,8 +30,7 @@ public class CustomFilter extends AbstractGatewayFilterFactory<CustomFilter.Conf
         });
     }
 
-    public static class Config {
-        // put the config properties
+    public static class Config { // put the config properties
     }
 
 }
